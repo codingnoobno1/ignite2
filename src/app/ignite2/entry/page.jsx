@@ -40,12 +40,13 @@ export default function EntryPage() {
     const getFilteredTeams = () => {
         if (!searchQuery) return [];
         return teams.filter(team =>
-            team.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            team.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            team.members.some(m => 
-                m.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                m.roll.includes(searchQuery)
-            )
+            (team.name && team.name.toLowerCase().includes(searchQuery.toLowerCase())) ||
+            (team.id && team.id.toLowerCase().includes(searchQuery.toLowerCase())) ||
+            (team.members && team.members.some(m =>
+                (m.name && m.name.toLowerCase().includes(searchQuery.toLowerCase())) ||
+                (m.enrollment && m.enrollment.includes(searchQuery)) ||
+                (m.roll && m.roll.includes(searchQuery)) // fallback for old data
+            ))
         );
     };
 
@@ -108,9 +109,9 @@ export default function EntryPage() {
                     transition={{ duration: 0.8, type: 'spring' }}
                 >
                     <Box sx={{ textAlign: 'center', mb: 6 }}>
-                        <Typography 
-                            variant="h2" 
-                            sx={{ 
+                        <Typography
+                            variant="h2"
+                            sx={{
                                 color: colors.neonCyan,
                                 textShadow: glowEffects.cyan,
                                 mb: 1,
@@ -124,9 +125,9 @@ export default function EntryPage() {
                             IGNITE 2.0
                             <Sparkles size={40} />
                         </Typography>
-                        <Typography 
-                            variant="h5" 
-                            sx={{ 
+                        <Typography
+                            variant="h5"
+                            sx={{
                                 color: colors.neonPink,
                                 textTransform: 'uppercase',
                                 letterSpacing: '0.2em',
@@ -143,7 +144,7 @@ export default function EntryPage() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     style={{ width: '100%', maxWidth: '700px' }}
                 >
-                    <Card sx={{ 
+                    <Card sx={{
                         background: `linear-gradient(135deg, ${colors.dark.card} 0%, ${colors.dark.paper} 100%)`,
                         border: `2px solid ${colors.neonCyan}`,
                         boxShadow: glowEffects.cyan,
@@ -151,10 +152,10 @@ export default function EntryPage() {
                     }}>
                         <CardContent sx={{ p: 4 }}>
                             <Box sx={{ mb: 3 }}>
-                                <Typography 
-                                    variant="h6" 
-                                    sx={{ 
-                                        mb: 2, 
+                                <Typography
+                                    variant="h6"
+                                    sx={{
+                                        mb: 2,
                                         color: colors.neonCyan,
                                         display: 'flex',
                                         alignItems: 'center',
@@ -197,9 +198,9 @@ export default function EntryPage() {
                                         animate={{ opacity: 1, height: 'auto' }}
                                         exit={{ opacity: 0, height: 0 }}
                                     >
-                                        <Box sx={{ 
-                                            maxHeight: 250, 
-                                            overflowY: 'auto', 
+                                        <Box sx={{
+                                            maxHeight: 250,
+                                            overflowY: 'auto',
                                             bgcolor: colors.dark.bg,
                                             border: `1px solid ${colors.dark.border}`,
                                             mb: 3,
@@ -213,12 +214,12 @@ export default function EntryPage() {
                                                 >
                                                     <Box
                                                         onClick={() => handleSelectTeam(team)}
-                                                        sx={{ 
-                                                            p: 2, 
+                                                        sx={{
+                                                            p: 2,
                                                             cursor: 'pointer',
                                                             borderBottom: `1px solid ${colors.dark.border}`,
                                                             transition: 'all 0.3s ease',
-                                                            '&:hover': { 
+                                                            '&:hover': {
                                                                 bgcolor: colors.dark.hover,
                                                                 borderLeft: `4px solid ${colors.neonCyan}`,
                                                                 pl: 3,
@@ -252,7 +253,7 @@ export default function EntryPage() {
                                         exit={{ opacity: 0, scale: 0.9, y: -20 }}
                                         transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                                     >
-                                        <Card sx={{ 
+                                        <Card sx={{
                                             bgcolor: colors.dark.bg,
                                             border: `2px solid ${selectedTeam.status === 'arrived' ? colors.neonGreen : colors.neonPink}`,
                                             boxShadow: selectedTeam.status === 'arrived' ? glowEffects.green : glowEffects.pink,
@@ -285,8 +286,8 @@ export default function EntryPage() {
                                                             animate={{ opacity: 1, x: 0 }}
                                                             transition={{ delay: i * 0.1 }}
                                                         >
-                                                            <Box sx={{ 
-                                                                p: 2, 
+                                                            <Box sx={{
+                                                                p: 2,
                                                                 bgcolor: colors.dark.card,
                                                                 border: `1px solid ${colors.dark.border}`,
                                                                 transition: 'all 0.3s ease',
@@ -299,7 +300,7 @@ export default function EntryPage() {
                                                                     {member.name}
                                                                 </Typography>
                                                                 <Typography variant="caption" sx={{ color: colors.neonPurple }}>
-                                                                    Roll: {member.roll}
+                                                                    Roll: {member.enrollment || member.roll}
                                                                 </Typography>
                                                             </Box>
                                                         </motion.div>
@@ -337,8 +338,8 @@ export default function EntryPage() {
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                 >
-                                    <Box sx={{ 
-                                        textAlign: 'center', 
+                                    <Box sx={{
+                                        textAlign: 'center',
                                         py: 4,
                                         color: colors.neonOrange,
                                     }}>
