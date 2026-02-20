@@ -1,0 +1,572 @@
+[
+  {
+    "name": "Coffee Coders",
+    "size": "4",
+    "leader": {
+      "name": "Lokankshi",
+      "phone": "#ERROR!"
+    },
+    "members": [
+      {
+        "name": "Lokankshi",
+        "enrollment": "A25305224029",
+        "role": "Leader"
+      },
+      {
+        "name": "Akhil",
+        "enrollment": "A25305224047",
+        "role": "Member"
+      },
+      {
+        "name": "Jungbir",
+        "enrollment": "A25305224037",
+        "role": "Member"
+      },
+      {
+        "name": "Aditya Singh",
+        "enrollment": "A25305224057",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "Team Poshanika",
+    "size": "4",
+    "leader": {
+      "name": "Khushi",
+      "phone": "8837663771"
+    },
+    "members": [
+      {
+        "name": "Khushi",
+        "enrollment": "A25305225044",
+        "role": "Leader"
+      },
+      {
+        "name": "Tusharmeet Singh",
+        "enrollment": "A25305225040",
+        "role": "Member"
+      },
+      {
+        "name": "Drishti Mahajan",
+        "enrollment": "A25305225050",
+        "role": "Member"
+      },
+      {
+        "name": "Meenal Sadana",
+        "enrollment": "A2530525016",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "InnovTech Labs",
+    "size": "4",
+    "leader": {
+      "name": "Aniket Agarwal",
+      "phone": "8699659679"
+    },
+    "members": [
+      {
+        "name": "Aniket Agarwal",
+        "enrollment": "A25305225073",
+        "role": "Leader"
+      },
+      {
+        "name": "Karunnya Mehta",
+        "enrollment": "A25305225096",
+        "role": "Member"
+      },
+      {
+        "name": "Aryan Jain",
+        "enrollment": "A25305225099",
+        "role": "Member"
+      },
+      {
+        "name": "Manas Choure",
+        "enrollment": "A25305225089",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "Sehaj Kaur",
+    "size": "3",
+    "leader": {
+      "name": "Sehaj Kaur",
+      "phone": "6280207686"
+    },
+    "members": [
+      {
+        "name": "Sehaj Kaur",
+        "enrollment": "A25305223115",
+        "role": "Leader"
+      },
+      {
+        "name": "Mansi",
+        "enrollment": "A25305223103",
+        "role": "Member"
+      },
+      {
+        "name": "Ashrita",
+        "enrollment": "A25305223001",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "NurtureLoop",
+    "size": "3",
+    "leader": {
+      "name": "Arshleen Kaur",
+      "phone": "7986213663"
+    },
+    "members": [
+      {
+        "name": "Arshleen Kaur",
+        "enrollment": "A25305223141",
+        "role": "Leader"
+      },
+      {
+        "name": "Ayushi",
+        "enrollment": "A25305223087",
+        "role": "Member"
+      },
+      {
+        "name": "Shreya",
+        "enrollment": "A25305223142",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "Mqsd",
+    "size": "4",
+    "leader": {
+      "name": "Himanshu",
+      "phone": "9416013436"
+    },
+    "members": [
+      {
+        "name": "Himanshu",
+        "enrollment": "A253145025043",
+        "role": "Leader"
+      },
+      {
+        "name": "Vaibhav Khanna",
+        "enrollment": "A25314502508",
+        "role": "Member"
+      },
+      {
+        "name": "Loveleen Kaur",
+        "enrollment": "A253145025020",
+        "role": "Member"
+      },
+      {
+        "name": "Anvi Gaur",
+        "enrollment": "A253145025031",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "CogniCare Crew",
+    "size": "2",
+    "leader": {
+      "name": "Kashish Kapoor",
+      "phone": "9317104570"
+    },
+    "members": [
+      {
+        "name": "Kashish Kapoor",
+        "enrollment": "A253167025032",
+        "role": "Leader"
+      },
+      {
+        "name": "Yash Vashisth",
+        "enrollment": "A253167025034",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "SmashBros",
+    "size": "3",
+    "leader": {
+      "name": "Abhinav Nara",
+      "phone": "+91 7909500001"
+    },
+    "members": [
+      {
+        "name": "Abhinav Nara",
+        "enrollment": "A25305223094",
+        "role": "Leader"
+      },
+      {
+        "name": "Hanspreet",
+        "enrollment": "A25305223140",
+        "role": "Member"
+      },
+      {
+        "name": "Sahib Singh",
+        "enrollment": "A25305223121",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "EarlyMinds",
+    "size": "4",
+    "leader": {
+      "name": "Gauri Sharma",
+      "phone": "7027550067"
+    },
+    "members": [
+      {
+        "name": "Gauri Sharma",
+        "enrollment": "A253167024046",
+        "role": "Leader"
+      },
+      {
+        "name": "Aastha Chambial",
+        "enrollment": "A253167024053",
+        "role": "Member"
+      },
+      {
+        "name": "Aayush",
+        "enrollment": "A253167024044",
+        "role": "Member"
+      },
+      {
+        "name": "Lakshya Jain",
+        "enrollment": "A253167024026",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "Error 404",
+    "size": "3",
+    "leader": {
+      "name": "Jasjeet Sharma",
+      "phone": "7009970813"
+    },
+    "members": [
+      {
+        "name": "Jasjeet Sharma",
+        "enrollment": "A253175025016",
+        "role": "Leader"
+      },
+      {
+        "name": "Sanskritika  Jamwal",
+        "enrollment": "A253175025012",
+        "role": "Member"
+      },
+      {
+        "name": "Gurnoor Singh",
+        "enrollment": "A253175025022",
+        "role": "Member"
+      },
+      {
+        "name": "Aryan Sharma",
+        "enrollment": "A253175125075",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "शिक्षण",
+    "size": "4",
+    "leader": {
+      "name": "Arnav sood",
+      "phone": "9882414738"
+    },
+    "members": [
+      {
+        "name": "Arnav sood",
+        "enrollment": "A253175125081",
+        "role": "Leader"
+      },
+      {
+        "name": "Deepinder singh",
+        "enrollment": "a25305225025",
+        "role": "Member"
+      },
+      {
+        "name": "Satyam narayan",
+        "enrollment": "A253175125117",
+        "role": "Member"
+      },
+      {
+        "name": "Shubneet kaur",
+        "enrollment": "A253175125116",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "Team Preventive Pulse",
+    "size": "2",
+    "leader": {
+      "name": "Avik",
+      "phone": "6296380049"
+    },
+    "members": [
+      {
+        "name": "Avik",
+        "enrollment": "12505962",
+        "role": "Leader"
+      },
+      {
+        "name": "Gopi Saraswat",
+        "enrollment": "12503954",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "TrioX",
+    "size": "3",
+    "leader": {
+      "name": "Mr.Salvotore",
+      "phone": "8968852974"
+    },
+    "members": [
+      {
+        "name": "Mr.Salvotore",
+        "enrollment": "A253175125029",
+        "role": "Leader"
+      },
+      {
+        "name": "Geetanjali Rana",
+        "enrollment": "A253175124142",
+        "role": "Member"
+      },
+      {
+        "name": "Baneesahiba Singh Madaan",
+        "enrollment": "A28150724033",
+        "role": "Member"
+      },
+      {
+        "name": "Vansh Bains",
+        "enrollment": "A253185125029",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "optimistix",
+    "size": "2",
+    "leader": {
+      "name": "Rounak Gera",
+      "phone": "8968515468"
+    },
+    "members": [
+      {
+        "name": "Rounak Gera",
+        "enrollment": "A25304823010",
+        "role": "Leader"
+      },
+      {
+        "name": "Ujjwal Sharma",
+        "enrollment": "A25304823013",
+        "role": "Member"
+      },
+      {
+        "name": "Mehul Singh",
+        "enrollment": "A25304823002",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "Team alpha",
+    "size": "2",
+    "leader": {
+      "name": "Aryan",
+      "phone": "9350668259"
+    },
+    "members": [
+      {
+        "name": "Aryan",
+        "enrollment": "A253167025025",
+        "role": "Leader"
+      },
+      {
+        "name": "Aryan",
+        "enrollment": "A253167025025",
+        "role": "Member"
+      },
+      {
+        "name": "Abhijit",
+        "enrollment": "A253167025050",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "The Crypts",
+    "size": "3",
+    "leader": {
+      "name": "Yashika Sharma",
+      "phone": "9306679775"
+    },
+    "members": [
+      {
+        "name": "Yashika Sharma",
+        "enrollment": "A253167025035",
+        "role": "Leader"
+      },
+      {
+        "name": "Siddharth Singh Slathia",
+        "enrollment": "A25305222132",
+        "role": "Member"
+      },
+      {
+        "name": "Arshdeep Singh",
+        "enrollment": "A253167025016",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "Team Beginners",
+    "size": "2",
+    "leader": {
+      "name": "Ayush Patial",
+      "phone": "6230228954"
+    },
+    "members": [
+      {
+        "name": "Ayush Patial",
+        "enrollment": "A25305223081",
+        "role": "Leader"
+      },
+      {
+        "name": "Ayush Patial",
+        "enrollment": "A25305223081",
+        "role": "Member"
+      },
+      {
+        "name": "Aman Verma",
+        "enrollment": "A25305223083",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "AstroNexus",
+    "size": "4",
+    "leader": {
+      "name": "Urvashi",
+      "phone": "9592600875"
+    },
+    "members": [
+      {
+        "name": "Urvashi",
+        "enrollment": "A253175124070",
+        "role": "Leader"
+      },
+      {
+        "name": "Pragati Thakur",
+        "enrollment": "A253175124034",
+        "role": "Member"
+      },
+      {
+        "name": "Lois A Johnson",
+        "enrollment": "A253175124053",
+        "role": "Member"
+      },
+      {
+        "name": "Kanika Bhatia",
+        "enrollment": "A253175124094",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "AlphaBytes",
+    "size": "4",
+    "leader": {
+      "name": "Sanchi garg",
+      "phone": "8264240039"
+    },
+    "members": [
+      {
+        "name": "Sanchi garg",
+        "enrollment": "A253167024031",
+        "role": "Leader"
+      },
+      {
+        "name": "Mannatpreet Kaur",
+        "enrollment": "A253167024034",
+        "role": "Member"
+      },
+      {
+        "name": "Harshit",
+        "enrollment": "A253167024039",
+        "role": "Member"
+      },
+      {
+        "name": "Adikansh",
+        "enrollment": "A253167024038",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "Brainwave",
+    "size": "4",
+    "leader": {
+      "name": "Lagan Gupta",
+      "phone": "9646010651"
+    },
+    "members": [
+      {
+        "name": "Lagan Gupta",
+        "enrollment": "A253175125109",
+        "role": "Leader"
+      },
+      {
+        "name": "Akagarta Arora",
+        "enrollment": "A253175125090",
+        "role": "Member"
+      },
+      {
+        "name": "Jahnvi Mehta",
+        "enrollment": "A253175125095",
+        "role": "Member"
+      },
+      {
+        "name": "Angelina Sharma",
+        "enrollment": "A253175125099",
+        "role": "Member"
+      }
+    ]
+  },
+  {
+    "name": "harsh and krish",
+    "size": "2",
+    "leader": {
+      "name": "harsh",
+      "phone": "9056840874"
+    },
+    "members": [
+      {
+        "name": "harsh",
+        "enrollment": "A25304825007",
+        "role": "Leader"
+      },
+      {
+        "name": "harsh",
+        "enrollment": "A25304825007",
+        "role": "Member"
+      },
+      {
+        "name": "krishnansh",
+        "enrollment": "A25304825030",
+        "role": "Member"
+      }
+    ]
+  }
+]

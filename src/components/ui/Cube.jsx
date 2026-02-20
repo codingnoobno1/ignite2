@@ -7,40 +7,25 @@ import * as THREE from "three"
 
 function PinkCube() {
   const ref = useRef()
-  const texture = useLoader(TextureLoader, "/pixel.png")
 
-  // Rotate ONLY horizontally (Y-axis)
-  useFrame((_, delta) => {
-    ref.current.rotation.y += delta * 0.25
+  // Rotate smoothly on Y-axis
+  useFrame((state, delta) => {
+    ref.current.rotation.y += delta * 0.5
+    ref.current.rotation.x += delta * 0.2
   })
 
   return (
-    <group ref={ref}>
-      {/* Main cube */}
-      <mesh>
-        <boxGeometry args={[3.2, 3.2, 3.2]} />
-        <meshStandardMaterial
-          map={texture}
-          metalness={0.6}
-          roughness={0.15}
-          emissive="#ff69b4"
-          emissiveIntensity={0.25}
-          opacity={0.95}
-          transparent
-        />
-      </mesh>
-
-      {/* Metallic Pink Edges */}
-      <lineSegments
-        geometry={
-          new THREE.EdgesGeometry(
-            new THREE.BoxGeometry(3.25, 3.25, 3.25)
-          )
-        }
-      >
-        <lineBasicMaterial color="#ff85d6" linewidth={2} />
-      </lineSegments>
-    </group>
+    <mesh ref={ref}>
+      <boxGeometry args={[3.2, 3.2, 3.2]} />
+      <meshStandardMaterial
+        color="#ff00ff"
+        emissive="#ff00ff"
+        emissiveIntensity={0.4}
+        roughness={0.2}
+        metalness={0.8}
+        wireframe
+      />
+    </mesh>
   )
 }
 

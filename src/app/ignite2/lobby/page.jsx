@@ -7,17 +7,39 @@ import { Sparkles, Users, Zap, Radio } from 'lucide-react';
 import { cyberpunkTheme, colors, glowEffects } from '@/lib/theme';
 import TeamCard from '@/components/ui/TeamCard';
 import WelcomeAnimation from '@/components/ui/WelcomeAnimation';
+import RotatingCube from '@/components/RotatingCube';
+import PixelPhone from '@/components/PixelPhone';
+
+/* ─────────── theme constants ─────────── */
+// Softer, "Deep Space" Palette
+const lobbyColors = {
+    bg: '#050510', // Deep Navy/Black
+    primary: '#00d4ff', // Soft Cyan
+    accent: '#d946ef', // Soft Magenta
+    text: '#f0f9ff', // Pale Blue/White
+    border: 'rgba(255, 255, 255, 0.1)',
+    grid: 'rgba(0, 212, 255, 0.03)',
+    // Status
+    success: '#4ade80', // Soft Green
+    warning: '#fbbf24', // Soft Amber
+};
+
+const lobbyGlows = {
+    primary: `0 0 20px ${lobbyColors.primary}40`,
+    accent: `0 0 20px ${lobbyColors.accent}40`,
+    text: `0 0 12px ${lobbyColors.primary}60`,
+};
 
 /* ─────────── sub-components ─────────── */
 
-const Stat = ({ label, value, color = colors.neonPink }) => (
+const Stat = ({ label, value, color }) => (
     <Box textAlign="center">
         <Typography
             variant="h4"
             sx={{
-                color,
+                color: color || lobbyColors.primary,
                 fontWeight: 'bold',
-                textShadow: `0 0 12px ${color}80`,
+                textShadow: `0 0 15px ${color}50`,
                 lineHeight: 1,
             }}
         >
@@ -26,10 +48,11 @@ const Stat = ({ label, value, color = colors.neonPink }) => (
         <Typography
             sx={{
                 fontSize: 11,
-                opacity: 0.55,
+                opacity: 0.6,
                 letterSpacing: 2,
                 textTransform: 'uppercase',
                 mt: 0.5,
+                color: lobbyColors.text
             }}
         >
             {label}
@@ -40,23 +63,23 @@ const Stat = ({ label, value, color = colors.neonPink }) => (
 const LiveIndicator = () => (
     <Box display="flex" alignItems="center" gap={1}>
         <motion.div
-            animate={{ scale: [1, 1.5, 1], opacity: [1, 0.3, 1] }}
-            transition={{ duration: 1.2, repeat: Infinity }}
+            animate={{ scale: [1, 1.3, 1], opacity: [0.8, 1, 0.8] }}
+            transition={{ duration: 2, repeat: Infinity }}
             style={{
-                width: 10,
-                height: 10,
+                width: 8,
+                height: 8,
                 borderRadius: '50%',
-                background: '#00ffea',
-                boxShadow: '0 0 14px #00ffea, 0 0 28px #00ffea40',
+                background: lobbyColors.success,
+                boxShadow: `0 0 10px ${lobbyColors.success}`,
             }}
         />
         <Typography
             sx={{
                 fontSize: 12,
-                fontWeight: 700,
-                letterSpacing: 3,
-                color: '#00ffea',
-                textShadow: '0 0 6px #00ffeaaa',
+                fontWeight: 600,
+                letterSpacing: 2,
+                color: lobbyColors.success,
+                textShadow: `0 0 8px ${lobbyColors.success}40`,
             }}
         >
             LIVE
@@ -64,13 +87,13 @@ const LiveIndicator = () => (
     </Box>
 );
 
-/* ─── floating neon beam ─── */
+/* ─── floating neon beam (Softer) ─── */
 const NeonBeam = ({ top, delay, color, width }) => (
     <motion.div
         initial={{ x: '-100%', opacity: 0 }}
-        animate={{ x: '200vw', opacity: [0, 1, 1, 0] }}
+        animate={{ x: '100vw', opacity: [0, 0.5, 0.5, 0] }} // Reduced opacity
         transition={{
-            duration: 8 + Math.random() * 6,
+            duration: 10 + Math.random() * 8, // Slower
             delay,
             repeat: Infinity,
             ease: 'linear',
@@ -82,14 +105,14 @@ const NeonBeam = ({ top, delay, color, width }) => (
             width: width || 180,
             height: 1,
             background: `linear-gradient(90deg, transparent, ${color}, transparent)`,
-            boxShadow: `0 0 8px ${color}60`,
+            opacity: 0.3,
             zIndex: 0,
             pointerEvents: 'none',
         }}
     />
 );
 
-/* ─── animated grid background ─── */
+/* ─── animated grid background (Subtle) ─── */
 const GridBackground = () => (
     <Box
         sx={{
@@ -98,6 +121,7 @@ const GridBackground = () => (
             overflow: 'hidden',
             zIndex: 0,
             pointerEvents: 'none',
+            background: `radial-gradient(ellipse at 50% 0%, #1a1a3a 0%, #050510 100%)` // Deep gradient
         }}
     >
         {/* grid lines */}
@@ -106,35 +130,22 @@ const GridBackground = () => (
                 position: 'absolute',
                 inset: 0,
                 backgroundImage: `
-                    linear-gradient(rgba(0,229,255,0.04) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(0,229,255,0.04) 1px, transparent 1px)
+                    linear-gradient(${lobbyColors.grid} 1px, transparent 1px),
+                    linear-gradient(90deg, ${lobbyColors.grid} 1px, transparent 1px)
                 `,
-                backgroundSize: '60px 60px',
+                backgroundSize: '80px 80px', // Larger grid, less dense
+                maskImage: 'radial-gradient(circle at 50% 50%, black 40%, transparent 100%)' // Fade edges
             }}
         />
-        {/* radial glow center */}
-        <motion.div
-            animate={{
-                opacity: [0.3, 0.5, 0.3],
-                scale: [1, 1.05, 1],
-            }}
-            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-            style={{
-                position: 'absolute',
-                inset: 0,
-                background:
-                    'radial-gradient(ellipse at 30% 20%, rgba(0,229,255,0.07) 0%, transparent 50%), radial-gradient(ellipse at 75% 75%, rgba(255,0,127,0.06) 0%, transparent 50%)',
-            }}
-        />
+
         {/* floating beams */}
-        <NeonBeam top="15%" delay={0} color={colors.neonCyan} width={220} />
-        <NeonBeam top="40%" delay={3} color={colors.neonPink} width={160} />
-        <NeonBeam top="65%" delay={6} color={colors.neonPurple} width={200} />
-        <NeonBeam top="85%" delay={9} color={colors.neonCyan} width={140} />
+        <NeonBeam top="15%" delay={0} color={lobbyColors.primary} width={220} />
+        <NeonBeam top="40%" delay={5} color={lobbyColors.accent} width={160} />
+        <NeonBeam top="75%" delay={2} color={lobbyColors.primary} width={200} />
     </Box>
 );
 
-/* ─── scanline overlay ─── */
+/* ─── scanline overlay (Very subtle) ─── */
 const ScanlineOverlay = () => (
     <Box
         sx={{
@@ -143,23 +154,23 @@ const ScanlineOverlay = () => (
             inset: 0,
             zIndex: 1,
             backgroundImage:
-                'repeating-linear-gradient(0deg, rgba(0,0,0,0.06) 0px, rgba(0,0,0,0.06) 1px, transparent 1px, transparent 3px)',
-            mixBlendMode: 'overlay',
-            opacity: 0.35,
+                'repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 4px)',
+            opacity: 0.3,
         }}
     />
 );
 
-/* ─── corner accents ─── */
+/* ─── corner accents (Minimal) ─── */
 const CornerAccent = ({ position }) => {
     const style = {
         position: 'absolute',
-        width: 30,
-        height: 30,
+        width: 20,
+        height: 20,
         zIndex: 2,
         pointerEvents: 'none',
+        opacity: 0.5
     };
-    const borderStyle = `2px solid ${colors.neonCyan}40`;
+    const borderStyle = `1px solid ${lobbyColors.primary}`;
     const map = {
         tl: { top: 0, left: 0, borderTop: borderStyle, borderLeft: borderStyle },
         tr: { top: 0, right: 0, borderTop: borderStyle, borderRight: borderStyle },
@@ -178,17 +189,17 @@ export default function LobbyPage() {
     const [newTeam, setNewTeam] = useState(null);
     const prevCountRef = useRef(0);
     const [clock, setClock] = useState('');
+    const [roundState, setRoundState] = useState(null);
+    const [timeRemaining, setTimeRemaining] = useState(0);
+    const [pixelDisplay, setPixelDisplay] = useState(null);
+
+    // ... (Clock, Fetch, Timer Logic remains same) ...
 
     /* real-time clock */
     useEffect(() => {
         const tick = () =>
             setClock(
-                new Date().toLocaleTimeString('en-US', {
-                    hour: '2-digit',
-                    minute: '2-digit',
-                    second: '2-digit',
-                    hour12: false,
-                })
+                new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })
             );
         tick();
         const id = setInterval(tick, 1000);
@@ -196,31 +207,86 @@ export default function LobbyPage() {
     }, []);
 
     /* polling */
-    const fetchTeams = useCallback(async () => {
+    const lastResetRef = useRef(0);
+    const fetchData = useCallback(async () => {
         try {
-            const res = await fetch('/api/ignite2/teams?status=arrived');
-            const data = await res.json();
-            const arrivedTeams = data.teams || data.filter?.(t => t.status === 'arrived') || [];
+            const resTeams = await fetch('/api/ignite2/teams?status=arrived');
+            const dataTeams = await resTeams.json();
+            const arrivedTeams = dataTeams.teams || dataTeams.filter?.(t => t.status === 'arrived') || [];
 
             if (arrivedTeams.length > prevCountRef.current && prevCountRef.current > 0) {
                 const latestTeam = arrivedTeams[arrivedTeams.length - 1];
                 setNewTeam(latestTeam);
             }
-
             setTeams(arrivedTeams);
             prevCountRef.current = arrivedTeams.length;
+
+            const resRound = await fetch('/api/ignite2/round');
+            const dataRound = await resRound.json();
+
+            if (dataRound.competition_state) {
+                const newState = dataRound.competition_state;
+                if (newState.pixelDisplay) {
+                    // Check if new payload or type to trigger animation?
+                    // React key on PixelPhone triggers re-render automatically on object change.
+                    setPixelDisplay(newState.pixelDisplay);
+                } else if (newState.adminMessage) {
+                    // Fallback for transition
+                    setPixelDisplay({ type: 'text', payload: newState.adminMessage });
+                }
+
+                const currentRound = newState.current_round;
+                const timerKey = currentRound === 1 ? 'round_1_timer' : 'round_2_timer';
+                const timer = newState[timerKey];
+
+                if (!roundState || (timer.lastReset && timer.lastReset > lastResetRef.current)) {
+                    setRoundState(newState);
+                    lastResetRef.current = timer.lastReset || Date.now();
+                }
+            }
         } catch (error) {
-            console.error('Failed to fetch teams', error);
+            console.error('Failed to fetch data', error);
         }
-    }, []);
+    }, [roundState, pixelDisplay]);
 
     useEffect(() => {
-        fetchTeams();
-        const interval = setInterval(fetchTeams, 3000);
+        fetchData();
+        const interval = setInterval(fetchData, 3000);
         return () => clearInterval(interval);
-    }, [fetchTeams]);
+    }, [fetchData]);
 
     const handleAnimationComplete = () => setNewTeam(null);
+    const currentRound = roundState?.current_round || 1;
+    const timerKey = currentRound === 1 ? 'round_1_timer' : 'round_2_timer';
+    const currentTimer = roundState?.[timerKey] || {};
+    const isTimerRunning = currentTimer.is_running;
+
+    useEffect(() => {
+        if (!roundState) return;
+        const tick = () => {
+            const now = new Date();
+            let rem = 0;
+            const cRound = roundState.current_round;
+            const tKey = cRound === 1 ? 'round_1_timer' : 'round_2_timer';
+            const timer = roundState[tKey];
+            if (timer.is_running && timer.end_time) {
+                const endTime = new Date(timer.end_time);
+                rem = Math.max(0, Math.floor((endTime - now) / 1000));
+            } else {
+                rem = timer.remaining || 0;
+            }
+            setTimeRemaining(rem);
+        };
+        tick();
+        const id = setInterval(tick, 1000);
+        return () => clearInterval(id);
+    }, [roundState]);
+
+    const fmtLobbyTime = (seconds) => {
+        const m = Math.floor(seconds / 60);
+        const s = Math.floor(seconds % 60);
+        return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    };
 
     /* ─── render ─── */
     return (
@@ -228,8 +294,8 @@ export default function LobbyPage() {
             <Box
                 sx={{
                     minHeight: '100vh',
-                    bgcolor: '#000',
-                    color: '#fff',
+                    bgcolor: lobbyColors.bg,
+                    color: lobbyColors.text,
                     position: 'relative',
                     overflow: 'hidden',
                     px: { xs: 2, md: 5 },
@@ -251,70 +317,91 @@ export default function LobbyPage() {
                     >
                         <Box
                             sx={{
-                                backdropFilter: 'blur(24px)',
-                                background: 'rgba(6,6,18,0.65)',
-                                border: `1px solid ${colors.dark.border}`,
-                                borderRadius: 3,
-                                px: { xs: 2, md: 4 },
+                                backdropFilter: 'blur(16px)',
+                                background: 'rgba(255, 255, 255, 0.03)',
+                                border: `1px solid ${lobbyColors.border}`,
+                                borderRadius: 4,
+                                px: { xs: 2, md: 5 }, // More horizontal padding
                                 py: { xs: 2, md: 3 },
                                 mb: { xs: 3, md: 5 },
                                 position: 'relative',
                                 overflow: 'hidden',
+                                boxShadow: '0 4px 30px rgba(0, 0, 0, 0.2)'
                             }}
                         >
-                            {/* glow strip */}
-                            <motion.div
-                                animate={{ opacity: [0.5, 1, 0.5] }}
-                                transition={{ duration: 2, repeat: Infinity }}
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    right: 0,
-                                    height: 2,
-                                    background: `linear-gradient(90deg, transparent, ${colors.neonCyan}, ${colors.neonPink}, transparent)`,
-                                }}
-                            />
-                            <CornerAccent position="tl" />
-                            <CornerAccent position="tr" />
-                            <CornerAccent position="bl" />
-                            <CornerAccent position="br" />
-
-                            <Grid container alignItems="center" spacing={2}>
-                                {/* TITLE */}
-                                <Grid item xs={12} md={5}>
-                                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-                                        <Zap size={28} color={colors.neonCyan} style={{ filter: `drop-shadow(0 0 6px ${colors.neonCyan})` }} />
+                            <Grid container alignItems="center" spacing={4}> {/* Increased spacing */}
+                                {/* TITLE + CUBE */}
+                                <Grid item xs={12} md={4}>
+                                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}> {/* Increased Gap */}
+                                        <Box sx={{ width: 60, height: 60, position: 'relative' }}>
+                                            <RotatingCube size={50} />
+                                        </Box>
                                         <Box>
                                             <Typography
                                                 variant="h3"
                                                 sx={{
-                                                    fontWeight: 900,
-                                                    color: colors.neonCyan,
-                                                    textShadow: glowEffects.cyan,
-                                                    letterSpacing: 4,
+                                                    fontWeight: 800,
+                                                    color: '#fff',
+                                                    letterSpacing: 2,
                                                     lineHeight: 1,
-                                                    fontSize: { xs: '1.6rem', md: '2.2rem' },
+                                                    fontSize: { xs: '1.4rem', md: '1.8rem' },
                                                 }}
                                             >
                                                 IGNITE 2.0
                                             </Typography>
                                             <Typography
                                                 sx={{
-                                                    opacity: 0.45,
+                                                    color: lobbyColors.primary,
+                                                    opacity: 0.8,
                                                     fontSize: 12,
                                                     letterSpacing: 4,
                                                     textTransform: 'uppercase',
+                                                    mt: 0.5
                                                 }}
                                             >
-                                                Live Arena Lobby
+                                                Live Round {currentRound}
                                             </Typography>
                                         </Box>
                                     </Box>
                                 </Grid>
 
+                                {/* CENTER - TIMER */}
+                                <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+                                    <Box
+                                        sx={{
+                                            position: 'relative',
+                                            textAlign: 'center'
+                                        }}
+                                    >
+                                        <Typography variant="caption" sx={{
+                                            display: 'block',
+                                            color: isTimerRunning ? lobbyColors.success : lobbyColors.warning,
+                                            letterSpacing: 3,
+                                            fontSize: 11,
+                                            fontWeight: 700,
+                                            mb: 1
+                                        }}>
+                                            {isTimerRunning ? '● SYSTEM ACTIVE' : '○ PAUSED'}
+                                        </Typography>
+                                        <Typography
+                                            variant="h2"
+                                            sx={{
+                                                fontFamily: '"Fira Code", monospace',
+                                                fontWeight: 700,
+                                                color: '#fff',
+                                                textShadow: isTimerRunning ? lobbyGlows.text : 'none',
+                                                letterSpacing: 2,
+                                                fontSize: { xs: '3rem', md: '4.5rem' },
+                                                lineHeight: 1,
+                                            }}
+                                        >
+                                            {fmtLobbyTime(timeRemaining)}
+                                        </Typography>
+                                    </Box>
+                                </Grid>
+
                                 {/* STATS */}
-                                <Grid item xs={12} md={7}>
+                                <Grid item xs={12} md={4}>
                                     <Box
                                         sx={{
                                             display: 'flex',
@@ -324,30 +411,29 @@ export default function LobbyPage() {
                                             flexWrap: 'wrap',
                                         }}
                                     >
-                                        <Stat label="Teams" value={teams.length} color={colors.neonPink} />
+                                        <Stat label="Teams" value={teams.length} color={lobbyColors.primary} />
                                         <Stat
                                             label="Members"
                                             value={teams.reduce((a, t) => a + (t.members?.length || 0), 0)}
-                                            color={colors.neonPurple}
+                                            color={lobbyColors.accent}
                                         />
                                         <Box
                                             sx={{
                                                 px: 2,
-                                                py: 0.8,
-                                                border: `1px solid ${colors.dark.border}`,
+                                                py: 1,
+                                                border: `1px solid ${lobbyColors.border}`,
                                                 borderRadius: 2,
                                                 fontFamily: '"Fira Code", monospace',
                                                 fontSize: 14,
-                                                letterSpacing: 3,
-                                                color: colors.neonCyan,
-                                                textShadow: `0 0 8px ${colors.neonCyan}50`,
+                                                letterSpacing: 2,
+                                                color: lobbyColors.text,
                                                 minWidth: 95,
                                                 textAlign: 'center',
+                                                background: 'rgba(255,255,255,0.05)'
                                             }}
                                         >
                                             {clock}
                                         </Box>
-                                        <LiveIndicator />
                                     </Box>
                                 </Grid>
                             </Grid>
@@ -362,14 +448,14 @@ export default function LobbyPage() {
                                     <Grid item xs={12} sm={6} md={4} lg={3} key={team.id || team._id}>
                                         <motion.div
                                             layout
-                                            initial={{ opacity: 0, y: 50, scale: 0.92 }}
+                                            initial={{ opacity: 0, y: 50, scale: 0.95 }}
                                             animate={{ opacity: 1, y: 0, scale: 1 }}
-                                            exit={{ opacity: 0, scale: 0.8, y: -20 }}
+                                            exit={{ opacity: 0, scale: 0.9, y: 10 }}
                                             transition={{
-                                                delay: index * 0.04,
+                                                delay: index * 0.03,
                                                 type: 'spring',
-                                                stiffness: 140,
-                                                damping: 18,
+                                                stiffness: 120,
+                                                damping: 15,
                                             }}
                                         >
                                             <TeamCard
@@ -385,65 +471,36 @@ export default function LobbyPage() {
                     ) : (
                         /* ── empty state ── */
                         <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
+                            initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5 }}
+                            transition={{ duration: 0.8 }}
                         >
                             <Box
                                 sx={{
                                     textAlign: 'center',
-                                    py: 14,
+                                    py: 12,
                                     px: 4,
-                                    borderRadius: 3,
-                                    backdropFilter: 'blur(16px)',
-                                    background: 'rgba(6,6,18,0.5)',
-                                    border: `1px dashed ${colors.dark.border}`,
-                                    position: 'relative',
-                                    overflow: 'hidden',
+                                    borderRadius: 4,
+                                    background: 'rgba(255,255,255,0.02)',
+                                    border: `1px dashed ${lobbyColors.border}`,
                                 }}
                             >
-                                <CornerAccent position="tl" />
-                                <CornerAccent position="tr" />
-                                <CornerAccent position="bl" />
-                                <CornerAccent position="br" />
-
+                                {/* Simple Pulsing Icon */}
                                 <motion.div
-                                    animate={{
-                                        scale: [1, 1.15, 1],
-                                        opacity: [0.4, 1, 0.4],
-                                    }}
-                                    transition={{
-                                        duration: 2.5,
-                                        repeat: Infinity,
-                                        ease: 'easeInOut',
-                                    }}
+                                    animate={{ opacity: [0.3, 0.7, 0.3] }}
+                                    transition={{ duration: 3, repeat: Infinity }}
                                 >
-                                    <Radio
-                                        size={80}
-                                        color={colors.neonCyan}
-                                        style={{ marginBottom: 20, filter: `drop-shadow(0 0 18px ${colors.neonCyan})` }}
-                                    />
+                                    <Radio size={60} color={lobbyColors.text} style={{ marginBottom: 24, opacity: 0.5 }} />
                                 </motion.div>
                                 <Typography
-                                    variant="h4"
+                                    variant="h5"
                                     sx={{
-                                        color: colors.neonCyan,
-                                        textShadow: `0 0 16px ${colors.neonCyan}60`,
-                                        mb: 1.5,
-                                        letterSpacing: 3,
+                                        color: lobbyColors.primary,
+                                        letterSpacing: 2,
+                                        mb: 1,
                                     }}
                                 >
-                                    AWAITING TEAMS
-                                </Typography>
-                                <Typography
-                                    variant="body1"
-                                    sx={{
-                                        color: colors.neonPurple,
-                                        opacity: 0.7,
-                                        letterSpacing: 1,
-                                    }}
-                                >
-                                    Teams will materialise here as they check in
+                                    WAITING FOR TEAMS
                                 </Typography>
                             </Box>
                         </motion.div>
@@ -460,6 +517,12 @@ export default function LobbyPage() {
                         />
                     )}
                 </AnimatePresence>
+
+                {/* ── PIXEL PHONE MESSAGE BOX (Fixed Bottom Right) ── */}
+                <Box sx={{ position: 'fixed', bottom: 40, right: 40, zIndex: 10 }}>
+                    <PixelPhone display={pixelDisplay} />
+                </Box>
+
             </Box>
         </ThemeProvider>
     );

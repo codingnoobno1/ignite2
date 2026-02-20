@@ -12,6 +12,21 @@ const CompetitionStateSchema = new mongoose.Schema({
         enum: [1, 2],
         default: 1,
     },
+    pixelDisplay: {
+        type: {
+            type: String,
+            enum: ['text', 'team', 'qr'],
+            default: 'text',
+        },
+        payload: {
+            type: String,
+            default: '',
+        },
+        timestamp: {
+            type: Number,
+            default: 0,
+        },
+    },
     round_1_timer: {
         duration: {
             type: Number,
@@ -28,6 +43,14 @@ const CompetitionStateSchema = new mongoose.Schema({
         started_at: {
             type: Date,
             default: null,
+        },
+        end_time: {
+            type: Date,
+            default: null,
+        },
+        lastReset: {
+            type: Number,
+            default: 0,
         },
         paused_at: {
             type: Date,
@@ -50,6 +73,14 @@ const CompetitionStateSchema = new mongoose.Schema({
         started_at: {
             type: Date,
             default: null,
+        },
+        end_time: {
+            type: Date,
+            default: null,
+        },
+        lastReset: {
+            type: Number,
+            default: 0,
         },
         paused_at: {
             type: Date,

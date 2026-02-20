@@ -1,0 +1,339 @@
+Timestamp,Team Name,Team Size,Team Leader Name,Enrollment Number,Email ID (Gmail) ,Course and Semester,Phone Number,Team Member 1 Name,Team Member 1 Enrollment number,Team Member 2 Name,Team Member 2 Enrollment number,Team Member 3 Name,Team Member 3 Enrollment Number,Initial Idea / Prospectus (400–500 words)
+2/18/2026 12:07:52,Coffee Coders,4,Lokankshi ,A25305224029,lokankshiguptaav90@gmail.com,Btech CSE and 4th Semester,#ERROR!,Akhil,A25305224047,Jungbir,A25305224037,Aditya Singh,A25305224057,"An ai companion for the new parents and their child  that  Help and advice on general stuff..
+The idea of an AI Companion for New Parents and Their Child focuses on solving one of the most stressful and overwhelming phases of life—early parenthood. First-time parents often struggle with confusion, anxiety, and a constant stream of conflicting advice from the internet, relatives, and social media. Small issues such as fever, irregular sleep, excessive crying, feeding concerns, or delayed milestones can cause panic, especially when medical professionals are not immediately available. Many parents also forget vaccination schedules or feel uncertain about whether their child’s growth is on track. In addition, new mothers and fathers may silently experience emotional stress or postpartum challenges without proper support. Our proposed solution is an AI-powered smart companion that provides 24/7 personalized guidance, reliable information, and emotional reassurance in one easy-to-use mobile application. The system would include an intelligent chatbot trained on verified pediatric guidelines and health resources, capable of answering common baby-care questions while clearly advising when professional medical help is required. It would also feature a growth and milestone tracker where parents can input their child’s age, weight, and height to receive progress insights and reminders. A smart vaccination scheduler would notify parents of upcoming immunizations based on regional health standards. An innovative feature could include cry analysis, where the app uses machine learning to analyze recorded baby sounds and suggest possible causes such as hunger, discomfort, or sleepiness. Additionally, the platform would provide mental wellness support for parents through mood tracking, stress-relief suggestions, and encouraging guidance. The AI Companion would prioritize safety by including clear disclaimers, emergency guidance prompts, and data privacy protection. By combining artificial intelligence, healthcare knowledge, and user-friendly design, this solution reduces misinformation, lowers stress levels, and supports healthier child development. The broader impact of this idea is significant, as millions of babies are born globally each year and many families lack instant access to trustworthy advice. This AI companion does not replace doctors but acts as a reliable first line of support, empowering parents with confidence, clarity, and care during one of the most important journeys of their lives."
+2/18/2026 12:56:17,Team Poshanika,4,Khushi,A25305225044,Lakhanpalkhushi@gmail.com,BTech CSE Core 2nd Semester ,8837663771,Tusharmeet Singh ,A25305225040,Drishti Mahajan ,A25305225050,Meenal Sadana,A2530525016,"My solution helps parents and caregivers counter unverified traditional childcare practices and provide extra care for premature and high-risk babies through an AI-powered guidance tool that delivers safe, evidence-based, and culturally sensitive caregiving support.
+The solution addresses gaps in early childcare by using AI to guide caregivers of premature and high-risk infants, replacing unverified traditional practices with evidence-based, culturally appropriate care recommendations.
+"
+2/18/2026 19:54:28,InnovTech Labs,4,Aniket Agarwal,A25305225073,agarwalaniket2006@gmail.com,"BTECH CSE , 2nd Semester",8699659679,Karunnya Mehta,A25305225096,Aryan Jain ,A25305225099,Manas Choure,A25305225089,"The NeuroPlay Cube is a system that helps us figure out if young children are at risk of having problems with their thinking and moving and social skills. It comes with a device called the NeuroPlay Cube that works with a mat and an iPhone to create a lab that can be used in schools and clinics and other places where resources are limited.
+
+The NeuroPlay Cube has buttons and lights and a way to feel vibrations, which helps kids do tasks that test how well they can take turns and react fast and control their movements. The NeuroPlay Cube also has a microphone and a way to measure how well they can balance and walk. The special mat uses pads to see how kids walk and balance. The NeuroPlay Cube system is very important. The mat is a big part of it.
+
+The iPhone 15 Pro is like the brain of the NeuroPlay Cube system. It uses its camera and microphone to look at how kids move and talk and interact with others. The iPhone 15 Pro uses all the information from the NeuroPlay Cube and the mat to make a score. This score shows how well kids are developing, including how they pay attention and move and talk. The NeuroPlay Cube system uses this score to understand how kids are doing.
+
+The whole NeuroPlay Cube system works by having kids do a series of tasks for five minutes. It makes sure that every time they do it it is the same. The NeuroPlay Cube system also makes the tasks harder or easier depending on how the kids do. The NeuroPlay Cube system keeps all the information safe. This is very important for kids and their parents.
+
+The NeuroPlay Cube is not a tool that can diagnose problems. The NeuroPlay Cube helps find out if kids need to see a professional like a doctor or a therapist. The NeuroPlay Cube is a way to make it easier and more affordable to screen kids for problems. The NeuroPlay Cube uses the technology to make it happen. The NeuroPlay Cube system can be used in places around the world. The main goal of the NeuroPlay Cube is to make sure that all kids have access, to the help they need. The NeuroPlay Cube is a part of making this happen."
+2/18/2026 20:21:31,Sehaj Kaur,3,Sehaj Kaur,A25305223115,sehajkaur9155@gmail.com,"BTECH CSE , semester-6",6280207686,Mansi ,A25305223103,Ashrita,A25305223001,,,"This project proposes NeuroPlay AI, a low-cost smart play mat + AI-based web platform that performs early screening of developmental delays in children through natural play. Instead of hospital-like clinical tests, the child is encouraged to crawl, sit, stand, and reach for toys on a sensor-based mat. The mat collects objective movement signals such as balance shifts, symmetry, coordination timing, and strength distribution. These signals are transmitted to a website used by Anganwadi workers or caregivers, where AI compares the child’s patterns with age-based developmental benchmarks and generates a simple screening output (Green/Amber/Red) along with a referral recommendation if required.
+Early childhood is the most important stage for brain and motor development. Many conditions such as cerebral palsy risk, motor delays, muscular asymmetry, neurological irregularities, and early autism indicators begin showing subtle signs between the ages of 0–3 years. However, in rural India and low-resource settings, early detection is often delayed because specialist doctors, diagnostic tools, and structured screening systems are not easily accessible. Most children are identified only when the delay becomes clearly visible, which reduces the effectiveness of early intervention. This creates a major gap in preventive child healthcare.
+NeuroPlay AI addresses this gap by providing an affordable and scalable screening system suitable for community environments. The smart play mat includes pressure sensors and motion sensors to record real-time biomechanical signals during play. The collected sensor data is processed into measurable indicators such as symmetry index, stability score, movement coordination score, and response timing. These indicators allow the system to detect abnormal motor patterns and early red flags in a more objective manner compared to traditional observation-based checklists.
+In addition to mat-based screening, the web platform can use a connected camera and microphone (laptop camera or mobile camera through browser access) to capture other developmental markers. During simple tasks like storytelling or toy interaction, computer vision analysis can estimate eye focus stability, attention span, head orientation, and facial responsiveness. Similarly, a short 60-second audio capture of cry or vocalization can be analyzed to detect abnormalities in vocal tone, pitch variation, and stress-related biomarkers that may relate to neurological or speech development issues. These multi-modal signals strengthen screening reliability without requiring expensive clinical equipment.
+All collected signals are combined into a unified Multi-Layer Development Index (MDI Score) which categorizes children into Green (Normal), Amber (Monitor), and Red (Immediate Referral). The platform also stores session history to monitor progress over time and aims to estimate 6–12 month risk trajectory using learning-based pattern analysis. The system is designed for offline-friendly use, with local storage and periodic syncing when internet is available.
+NeuroPlay AI is unique because it enables passive screening through play, combines low-cost hardware with AI, and brings objective developmental monitoring into Anganwadi and rural setups where specialist screening is limited."
+2/19/2026 11:26:46,NurtureLoop,3,Arshleen Kaur,A25305223141,arshiarora.1105@gmail.com,Btech CSE B,7986213663,Ayushi,A25305223087,Shreya ,A25305223142,,,"NurtureLoop – The Privacy-First AI Developmental Ecosystem
+Product Overview
+NurtureLoop is a comprehensive Early Childhood Development (ECD) platform designed to bridge the gap between developmental science and field-level usability. It is a unified application serving three primary user groups—parents, frontline workers (Anganwadi), and administrators—through a shared, privacy-first architecture.
+The platform addresses Problem A (Early Identification of Developmental Delays) and Problem D (Data Governance & Ethical AI) by transforming standard tablets into “invisible observers” that monitor developmental milestones without recording or storing video. NurtureLoop ensures early detection while preserving dignity, safety, and privacy.
+Core Feature: The “Smart Play” Interface (Problem A)
+At the center of NurtureLoop is the Smart Play module, a gamified interface for children aged 0–6 years. Instead of traditional assessments or static questionnaires, children engage in age-appropriate interactive games while AI models run securely in the background.
+1. Real-Time Motor Analysis:
+Using on-device computer vision, the app tracks hand and body landmarks to evaluate fine and gross motor development.
+During activities like bubble-popping games, the system evaluates fine motor skills such as pincer grasp precision.
+In movement-based games (jumping, balancing, reaching), skeletal angle calculations assess gross motor coordination and balance.
+2. Cognitive & Attention Tracking:
+The system analyzes gaze direction and attention span during gameplay.
+It measures whether a child follows visual cues (joint attention), a key marker of social and cognitive development.
+These insights help identify early risk indicators related to developmental delays, including attention-related or autism spectrum concerns.
+Importantly, no video is recorded or stored. The system only extracts mathematical coordinates (metadata) required for developmental scoring.
+User Experience & Engagement (Problems B & C)
+NurtureLoop provides secure, role-based portals with Multi-Factor Authentication (MFA) to ensure data protection and controlled access.
+1. Parent Portal (Caregiver Empowerment)
+The parent dashboard translates complex developmental science into clear, actionable insights.
+Genetic Risk Analyzer: Parents can input family history information to identify potential hereditary risk factors.
+Personalized Micro-Interventions: Based on Smart Play results, the app generates simple, gamified daily activity suggestions (e.g., balance-based games, memory exercises).
+Age-Based Nutrition Guidance: Offers structured meal suggestions aligned with child development needs.
+Multilingual Support: Ensures accessibility across diverse linguistic backgrounds.
+The focus is on empowerment, not anxiety—guiding parents with supportive, easy-to-follow recommendations.
+2. Anganwadi Worker Portal (Digital Enablement)
+Designed for efficiency in field environments:
+Voice-First Documentation: Workers can dictate observations (e.g., “Rohan stacked four blocks today”), and the system converts speech into structured records using real-time speech recognition.
+Automated Learning Stories: Instead of mechanical checklists, the system generates narrative-style developmental reports aligned with ECD pedagogy.
+Quick Risk Flags: Workers receive simple color-coded developmental indicators to prioritize follow-ups
+Technical Architecture: Privacy by Design (Problem D)
+NurtureLoop operates on a Zero-Trust, Edge-AI Architecture to ensure ethical and secure implementation.
+1. On-Device Processing (Edge AI):
+All video and audio analysis occurs locally on the device’s CPU. No raw footage is stored or transmitted.
+2. Data Minimization:
+The camera functions only as a sensor. Frames are processed in real time to extract numerical coordinates (metadata), after which the original frames are immediately discarded.
+3. Encrypted & Anonymized Reporting:
+Only anonymized developmental scores (e.g., “Motor Development: Above Average”) are encrypted and synced to the government dashboard.
+4. Sovereign Governance Dashboard:
+Government authorities receive high-level, aggregated insights for impact assessment and policy planning without accessing personal child data.
+Conclusion
+NurtureLoop is not merely a screening tool—it is a full-cycle developmental ecosystem. By combining Edge AI for privacy, speech recognition for workflow efficiency, and gamification for child engagement, the platform enables scalable early identification while protecting children’s dignity and data sovereignty.
+It empowers caregivers, strengthens frontline workers, and equips administrators with actionable, ethical insights—creating a secure and inclusive future for early childhood development."
+2/19/2026 12:08:21,Mqsd,4,Himanshu,A253145025043,himanshurohilla235@gmail.com,Mca 2nd sem,9416013436,Vaibhav Khanna,A25314502508,Loveleen Kaur,A253145025020,Anvi Gaur,A253145025031,"Our initial idea is to develop an AI-Based Developmental Milestone Tracking App that helps parents and caregivers monitor a child’s cognitive, physical, and social development during early childhood. The app will compare the child’s growth and behavior with standard developmental milestones defined by pediatric experts. Parents will answer simple questions within the app, such as whether the child responds to their name, points to objects, walks properly, recognizes familiar faces, or shows normal social interaction. This information will be analyzed using AI techniques such as Decision Trees and Random Forest algorithms, which are trained to identify patterns associated with normal and delayed development. Based on the responses, the AI will calculate a risk score and classify the child’s developmental status into Low Risk, Medium Risk, or High Risk categories. If a potential delay is detected, the app will recommend early medical consultation and provide guidance for parents. This solution enables early identification of cognitive and developmental delays in an accessible, cost-effective, and user-friendly way, especially for families with limited access to healthcare professionals. By leveraging AI for predictive risk assessment, the app aims to support timely intervention, improve developmental outcomes, and ensure better long-term cognitive and behavioral growth in children."
+2/19/2026 13:55:25,CogniCare Crew,2,Kashish Kapoor ,A253167025032,kashishkapoor1616@gmail.com,Btech data science 2nd semester ,9317104570,Yash Vashisth ,A253167025034,,,,,"Every year, millions of children worldwide experience cognitive and developmental delays—such as autism spectrum disorder (ASD), speech impairments, or motor skill deficits—that go undetected until school age, leading to lifelong challenges. Our startup, NeuroBloom AI, proposes an innovative AI platform to identify these delays as early as 6 months, enabling timely interventions that can transform lives. By leveraging smartphone-based assessments and machine learning, we aim to democratize access to early screening, reducing global healthcare burdens and empowering parents in underserved communities like rural India.The Problem
+Developmental delays affect 10-15% of children under 5, per WHO data, yet 70% in low-resource settings remain undiagnosed until age 4 or later. Traditional methods rely on expensive clinician visits, lengthy questionnaires (e.g., M-CHAT), or specialized equipment, excluding 80% of families in regions like Punjab, India. Delayed detection correlates with poorer outcomes: lower IQ scores, higher dropout rates, and increased societal costs exceeding $2 trillion annually worldwide. In India alone, with 25 million births yearly, early intervention could prevent cascading educational and economic losses.Our AI Solution
+NeuroBloom AI is a mobile app that uses computer vision, natural language processing (NLP), and behavioral analytics for non-invasive screening. Parents upload short videos of play sessions or interactions; our models—trained on anonymized datasets from 50,000+ pediatric cases—analyze eye contact, gesture patterns, vocalizations, and social cues with 92% accuracy (validated against gold-standard diagnostics like ADOS). Key features:Real-time Risk Scoring: Instant heatmap reports flagging delays in cognition, language, or motor skills.Personalized Action Plans: Links to local therapists, free resources, and telehealth integrations.Scalability: Works offline, supports regional languages (e.g., Hindi, Punjabi), and integrates with government programs like Anganwadi.Powered by edge AI (e.g., TensorFlow Lite), it ensures privacy via federated learning, complying with GDPR and India's DPDP Act.Impact and Social Good
+For a meaningful cause, NeuroBloom targets India's 1.3 million annual ASD cases, partnering with NGOs like Ummeed Child Development Center. Pilot in Ludhiana could screen 10,000 children in Year 1, boosting detection rates by 50% and cutting intervention costs by 40%. Long-term: Reduced institutionalization, empowered families, and healthier societies.Business Model and Roadmap
+Freemium app (basic scans free; premium analytics ₹99/month). Revenue from B2B (hospitals, schools) and grants. MVP launch in 6 months; scale to 1M users by Year 3. Seeking ₹5 crore seed funding for development and trials.NeuroBloom AI: Detecting delays today for brighter tomorrows."
+2/19/2026 14:52:38,SmashBros,3,Abhinav Nara ,A25305223094,Abhinav.nara@s.amity.edu,Btech cse 6th semester ,+91 7909500001,Hanspreet ,A25305223140,Sahib Singh ,A25305223121,,,"An AI-powered storytelling app that creates personalized stories for kids based on:
+	•	Their name
+	•	Favorite subjects (space, animals, cars, fantasy, etc.)
+	•	Moral lesson parents want to teach
+
+How it works:
+	•	Child chooses theme
+	•	AI generates illustrated story
+	•	Story adapts based on choices (like a game)
+	•	Includes voice narration
+
+Why it’s powerful:
+	•	Encourages reading habit
+	•	Builds imagination
+	•	Teaches values naturally
+
+You could even gamify it with levels like:
+“Explorer Mode”, “Scientist Mode”, etc.
+"
+2/19/2026 15:59:57,EarlyMinds,4,Gauri Sharma,A253167024046,gauri.sharma01.gs@gmail.com,Btech CSE(DS) and 4th semester ,7027550067,Aastha Chambial ,A253167024053,Aayush,A253167024044,Lakshya Jain ,A253167024026,"This project proposes an AI-driven Early Childhood Development Screening and Intervention Platform designed to identify and support children aged 0–6 years who may exhibit signs of speech delay, early autism indicators, attention deficiency, ADHD-related behaviors, cognitive delay, or social interaction difficulties. Developmental challenges are often recognized late, reducing the effectiveness of early intervention. The primary objective of this system is to enable timely, accessible, and data-driven early screening combined with personalized cognitive support.
+The platform consists of three core components: (1) a Multimodal AI-Based Detection Engine, (2) a Personalized Adaptive Training Module, and (3) a Predictive Progress Monitoring System.
+In the detection phase, parents submit short interaction videos, brief speech samples, and responses to structured developmental milestone questionnaires via a mobile application. The system applies computer vision, speech processing, and natural language processing techniques to extract behavioral features such as eye contact frequency, facial responsiveness, speech clarity, vocabulary usage, response latency, motor coordination, and attention patterns. These features are compared against age-appropriate developmental benchmarks derived from established pediatric guidelines. A supervised machine learning model (e.g., logistic regression or gradient boosting) then generates probabilistic risk scores for each developmental domain. Importantly, the system is designed as an early screening and support tool rather than a diagnostic replacement for clinical evaluation.
+Following screening, the platform generates a personalized intervention pathway tailored to the child’s identified needs. For speech delay, AI-guided sound imitation and object-labeling exercises are provided. For attention and ADHD-related concerns, reaction-time and focus-based interactive games are used. Cognitive delay is addressed through memory sequencing and problem-solving activities, while social interaction challenges are supported through emotion recognition and structured conversational simulations. A reinforcement learning–based adaptive engine dynamically adjusts task difficulty and activity selection based on ongoing performance metrics, ensuring progressive skill development.
+The third component focuses on longitudinal monitoring. The system tracks performance trends over time, generates developmental growth curves, and identifies stagnation or improvement patterns. Where necessary, it recommends professional consultation, reinforcing responsible and ethical use.
+Unlike many existing applications that either provide communication aids or standalone screening tools, this proposed solution integrates detection, adaptive training, and predictive analytics into a unified framework. By leveraging multimodal AI and personalized learning strategies, the platform aims to make early developmental support more proactive, scalable, and accessible to families."
+2/19/2026 16:50:51,Error 404,3,Jasjeet Sharma,A253175025016,sharmajasjeet63@gmail.com,Btech cybersecurity  2nd sem,7009970813,Sanskritika  Jamwal,A253175025012,Gurnoor Singh ,A253175025022,Aryan Sharma,A253175125075,"Project Prospect (≈450 words)
+
+Title:
+
+EarlyLens AI – An AI-Based Developmental Screening Tool for Rural Anganwadi Centers
+
+Introduction
+
+Early childhood (0–6 years) is the most critical period for brain development. Delays in speech, motor skills, cognition, or social behavior often go unnoticed in rural and underserved communities due to lack of specialists and structured monitoring systems. Late identification reduces the effectiveness of intervention and impacts long-term educational and social outcomes. EarlyLens AI aims to assist Anganwadi and rural health workers in identifying children at risk of developmental delays through a simple, AI-powered screening tool.
+
+
+---
+
+Problem Statement
+
+In many rural areas, developmental screening relies on manual observation and inconsistent record-keeping. Limited access to pediatric neurologists and psychologists delays diagnosis and intervention. There is a need for a scalable, low-cost, and easy-to-use digital system that supports early identification while remaining accessible to frontline workers.
+
+
+---
+
+Proposed Solution
+
+EarlyLens AI is a tablet-based application designed for Anganwadi workers. The system collects structured inputs based on age-specific developmental milestones, including:
+
+Motor skills (sitting, walking, grasping)
+
+Speech and language milestones
+
+Social interaction indicators
+
+Birth and nutrition history
+
+
+The collected data is processed using a machine learning model (e.g., Logistic Regression or Random Forest) trained on developmental milestone datasets. The system generates a risk probability score categorized as:
+
+Low Risk (Normal Development)
+
+Moderate Risk (Monitor Closely)
+
+High Risk (Refer to Specialist)
+
+
+The application supports multilingual interfaces and can function offline, syncing data when internet access is available.
+
+
+---
+
+Objectives
+
+1. Develop a structured digital milestone questionnaire for children aged 0–6.
+
+
+2. Build and integrate a predictive machine learning model.
+
+
+3. Provide clear referral guidance based on risk levels.
+
+
+4. Create a centralized dashboard for district-level monitoring.
+
+
+5. Ensure data privacy and parental consent compliance.
+
+
+
+
+---
+
+Methodology
+
+Collect and preprocess developmental milestone data.
+
+Train and validate a classification model.
+
+Develop a cross-platform mobile application.
+
+Conduct pilot testing in selected rural centers.
+
+Refine based on user feedback.
+
+
+
+---
+
+Expected Outcomes
+
+Improved early detection of developmental delays.
+
+Faster referral to healthcare professionals.
+
+Better record-keeping and longitudinal tracking.
+
+Data-driven insights for policymakers.
+
+
+
+---
+
+Impact
+
+EarlyLens AI supports frontline workers rather than replacing medical professionals. By enabling timely intervention during critical neurodevelopmental windows, the system can significantly improve long-term cognitive, educational, and social outcomes for children in rural India."
+2/19/2026 18:07:26,शिक्षण,4,Arnav sood,A253175125081,soodarnav06@gmail.com,btech sem 2 ai/ml sec d,9882414738,Deepinder singh,a25305225025,Satyam narayan,A253175125117,Shubneet kaur,A253175125116,"Prospectus
+AI-Enabled Early Identification & Risk Stratification for Children (0–6 Years)
+Background & Need
+
+Early Childhood Development (ECD) is a crucial phase during which nutritional deficiencies, congenital abnormalities, and undetected medical conditions can adversely affect physical growth, cognitive ability, and long-term health. Although blood tests and basic physical observations are commonly conducted, their interpretation often requires medical expertise that is not consistently available at the field level. This results in delayed identification of developmental risks and missed opportunities for early intervention.
+
+There is a clear need for an AI-enabled system that can convert existing medical and visual data into objective, standardized, and actionable developmental risk insights, especially in resource-constrained settings.
+
+Proposed Solution
+
+The proposed solution is an AI-based early screening and risk stratification platform designed for children aged 0–6 years. The system analyzes blood test reports and child images to identify early indicators of nutritional deficiencies, congenital abnormalities, and health conditions associated with developmental delays. The platform supports frontline workers and caregivers by simplifying complex medical information into clear risk categories and early warning alerts.
+
+System Overview
+
+The platform operates through a mobile application with the following workflow:
+
+Data Capture
+
+Photograph of a child’s blood test report
+
+Upload of child facial and posture images
+
+Entry of basic demographic details such as age and gender
+
+AI-Based Analysis
+
+Optical Character Recognition (OCR) extracts laboratory values from blood reports
+
+AI models compare extracted values against age-specific pediatric reference ranges to detect deficiencies such as iron, vitamin D, vitamin B12, calcium, and thyroid-related irregularities
+
+Computer vision models analyze child images to identify visible physical abnormalities, asymmetry, or growth-related deformities
+
+Risk Stratification
+The system aggregates biochemical and visual indicators to generate a developmental risk score, categorizing children into low, moderate, or high-risk groups. High-risk cases are automatically prioritized for referral and follow-up.
+
+Alignment with Expected Outcomes
+
+Objective and Standardized Screening
+Automated analysis using clinical thresholds and AI-driven image assessment ensures uniform and unbiased screening.
+
+Risk Stratification and Prioritization
+AI-generated risk scores enable efficient prioritization of children requiring urgent attention.
+
+Predictive Insights and Early Warnings
+By correlating deficiency patterns and physical indicators with known developmental risks, the system provides early warning alerts before delays become clinically evident.
+
+Field-Level Usability with Offline Support
+The solution is designed as an offline-first mobile application, allowing data capture and preliminary screening without continuous internet connectivity.
+
+Ethical Considerations and Impact
+
+The platform functions strictly as a screening and risk-indication tool and does not provide medical diagnoses. All data handling follows consent-based, secure, and government-compliant data governance standards. The solution empowers caregivers, supports frontline workers, and strengthens early childhood health outcomes through timely identification and intervention."
+2/19/2026 19:52:32,Team Preventive Pulse,2,Avik,12505962,avikd906@gmail.com,BCA (sem 2) ,6296380049,Gopi Saraswat,12503954,,,,,"The HealthMirror AI - Preventive Healthcare Assistant.
+HealthMirror AI is a progressive AI-based preventive healthcare application that aims at providing early diagnosis of health using smart phones. Our mission is to make smart mobile devices our health companions that not only track mental but also physical health in real time as well.
+The system is based on facial recognition and behavioral pattern recognition with AI and symptom-related data to detect the early signs of stress, fatigue, anxiety, nutritional deficits and dehydration among other possible health hazards. HealthMirror AI can identify micro-expressions, skin tone variations, and eye fatigue patterns, subtle biomarkers that HealthMirror can detect by analyzing the face of a user but are often overlooked by conventional health monitoring devices.
+In contrast to the reactive healthcare models, which pay attention to the treatment of the illness only, HealthMirror AI is a predictive model, i.e. it provides early warnings and personalized lifestyle suggestions before the problems grow.
+In the case of mental health, the platform notices the patterns of emotional stress and recommends wellness techniques including mindfulness, breathing exercises or sleep enhancement or consultation consultation. In the long run, it develops an active health profile, and one can track it more intelligently without wearable hardware.
+HealthMirror AI is designed to be an individual and corporate-scale preventive care tool that is able to support personal and corporate and hospital-level wellness solutions. Having the possibility of integrating blockchain in the future, it guarantees the safe, open, and user-managed medical data management.
+HealthMirror AI is not an app but a reflection system on health that brings a lot of power to help people remain healthier, sooner."
+2/19/2026 20:41:07,TrioX,3,Mr.Salvotore,A253175125029,Geetanjali.rana@s.amity.edu,B.tech CSE(Ai ml) 2nd sem,8968852974,Geetanjali Rana,A253175124142,Baneesahiba Singh Madaan,A28150724033,Vansh Bains,A253185125029,It's about Ai
+2/19/2026 21:13:29,optimistix,2,Rounak Gera,A25304823010,gerarounak890@gmail.com,"BCA, 6",8968515468,Ujjwal Sharma,A25304823013,Mehul Singh,A25304823002,,,"Early childhood is a crucial stage of human development where cognitive, social, emotional, and motor abilities begin to form rapidly. During the age group of 0–5 years, children achieve several important developmental milestones related to speech, movement, memory, attention span, and social interaction. However, developmental conditions such as speech delay, Autism Spectrum Disorder (ASD), ADHD, cognitive delay, and motor skill delay often begin to show subtle signs during this early stage. In many cases, parents or caregivers are unable to recognize these signs on time due to lack of awareness or limited access to developmental specialists. As a result, proper intervention is delayed, which may negatively impact the child’s learning ability and overall growth in the future.
+
+To address this issue, the proposed idea focuses on developing an AI-powered early screening platform that assists in identifying possible developmental delays in young children at an early stage. The platform will make use of advanced Artificial Intelligence techniques to monitor and analyze different behavioral and cognitive indicators in children through a mobile application.
+
+- The system will incorporate Speech Analysis using AI to study the child’s speech patterns, pronunciation, and language development in comparison with age-appropriate benchmarks. - Additionally, Video-Based Behavior Analysis using Computer Vision will be used to observe facial expressions, eye contact, body gestures, and interaction responses which may help in detecting early behavioral signs associated with conditions such as ASD or ADHD.
+- Furthermore, the platform will include interactive cognitive mini-games designed to evaluate a child’s attention span, memory, problem-solving ability, and response time in an engaging manner. 
+
+These activities will also assist in identifying any cognitive or motor skill delays through continuous performance monitoring. Along with this, a milestone tracking feature will allow parents to record the child’s developmental progress through a mobile interface, enabling the system to detect any deviations from standard growth patterns.
+Based on the collected data, the platform will generate a risk assessment report that may highlight potential developmental concerns for early screening purposes. This solution aims to support parents, caregivers, and healthcare professionals by enabling timely intervention and improving long-term developmental outcomes for children."
+2/19/2026 22:24:40,Team alpha,2,Aryan,A253167025025,aryanmor9988@gmail.com,"BTech Data science, semester 2",9350668259,Aryan,A253167025025,Abhijit ,A253167025050,,,How to save babies of age (0-6 ) from disease by detecting them early 
+2/19/2026 22:37:47,The Crypts,3,Yashika Sharma,A253167025035,yashikasharma2967@gmail.com,Btech CSE Data Science 2nd year(3rd sem),9306679775,Siddharth Singh Slathia,A25305222132,Arshdeep Singh,A253167025016,,,"What It Is
+KiddoMetrics is an AI tool that analyzes baby videos parents already have on their phones to detect early signs of developmental delays — without requiring any new recordings, special hardware, or clinical visits.
+
+The Problem It Solves
+1 in 6 children has a developmental disability, but most aren't identified until age 4-5 — missing the critical brain plasticity window (0-3 years) where intervention is most effective. Current screening fails because it relies on parent memory (""When did she first sit?""), 15-minute clinic snapshots every 6 months, and subjective questionnaires with high error rates.
+
+Meanwhile, parents have hundreds of unlabeled baby videos sitting in their Google Photos or iCloud — a goldmine of developmental evidence that nobody is using.
+
+How It Works
+1. Parent connects their photo library and enters child's birthdate
+2. AI selects ~20 relevant videos spanning birth to present
+3. Pose estimation extracts 33 body landmarks from each video frame
+4. Feature engine computes 23 biomechanical measurements (torso angle, knee straightness, arm symmetry, pointing gestures)
+5. Ensemble classifier (Random Forest + Neural Network, 99.2% accuracy) identifies which developmental milestone is occurring in each frame
+6. Timeline engine maps when each milestone was first achieved against WHO/CDC norms
+7. Output: Color-coded developmental timeline, velocity curve showing acceleration or plateau, and a pediatrician-ready PDF report with specific video evidence
+All processing happens on the parent's device. No baby videos are uploaded anywhere.
+
+What It Detects
+RetroLens is strongest at flagging motor-based conditions:
+
+Cerebral Palsy — persistent left-right body asymmetry across videos (our strongest use case; video-based motor analysis is already the clinical gold standard for CP)
+Autism Spectrum Disorder (partial) — absent pointing gesture after 14 months and developmental plateau in the second year (2-3 of 12 ASD indicators)
+Global Developmental Delay — multiple motor milestones consistently late, distinguishable from isolated delays
+It cannot currently detect speech delays, ADHD, hearing/vision issues, or conditions requiring audio or gaze analysis. It is a decision-support tool that complements — never replaces — clinical evaluation.
+
+Why It's Different
+Every competitor (Cognoa, BabySparks, ASQ) requires parents to create new data — record structured videos, log daily activities, or fill questionnaires. RetroLens is the only tool that works with data that already exists, requiring zero effort from parents. It transforms a scattered photo library into an objective longitudinal medical record, giving worried parents concrete evidence to advocate effectively at their next pediatric visit.
+
+The Impact
+Early identification shifts intervention into the peak brain plasticity window, saving an estimated $1.2M lifetime cost per child and dramatically improving outcomes. RetroLens makes this possible using something every family already owns: their camera roll."
+2/19/2026 23:10:02,Team Beginners ,2,Ayush Patial ,A25305223081 ,gurua9586@gmail.com,B.tech Cse 6th sem,6230228954,Ayush Patial ,A25305223081,Aman Verma,A25305223083,,,"We propose an AI-powered platform that converts developmental assessments into personalized, culturally appropriate intervention plans for children. The system analyzes child data to identify risks and skill gaps, then generates tailored daily activities and guidance delivered to caregivers via app, voice, SMS, or WhatsApp in local languages. Frontline workers receive dashboards with alerts, progress tracking, and recommended actions for timely support.
+
+Continuous monitoring and feedback loops measure improvement and refine interventions over time.
+
+Impact: individualized care pathways, empowered caregivers, smarter worker support, and measurable developmental gains through scalable, inclusive technology."
+2/19/2026 23:14:32,AstroNexus,4,Urvashi,A253175124070,urvashizira@gmail.com,B Tech Cse AIML,9592600875,Pragati Thakur,A253175124034,Lois A Johnson,A253175124053,Kanika Bhatia,A253175124094,"Early childhood represents a high-plasticity phase of neurodevelopment, where early intervention significantly improves long-term cognitive and behavioral outcomes. However, developmental delays are often detected only between ages 3–5, primarily through periodic clinical observation and subjective behavioral screening tools. This reactive approach limits early risk identification and delays intervention during a critical developmental window.
+We propose a Multi-Modal Passive Behavioral Intelligence System for Early Developmental Risk Screening. The system is explicitly non-diagnostic and functions as a longitudinal risk-indicator platform designed to augment, not replace, pediatric evaluation.
+The solution integrates passive physiological sensing with behavioral analytics. A lightweight wearable module captures heart rate variability (HRV) and motion dynamics through inertial measurement sensors. Optional vision-based pose estimation or smart environmental interaction modules capture motor variability, postural stability, and stimulus-response behavior in naturalistic settings.
+The core innovation lies in Micro-Recovery Loop Modeling — a structured behavioral intelligence framework that analyzes:
+Stimulus → Autonomic Response → Behavioral Shift → Recovery Time
+Rather than evaluating isolated behavioral markers, the system models dynamic recovery trajectories across repeated micro-stimulus events. These longitudinal recovery curves allow detection of subtle autonomic dysregulation or atypical motor adaptation patterns that may correlate with early developmental risk.
+From a technical perspective, the platform leverages:
+Time-series modeling (LSTM or Transformer-based architectures) for sequential physiological and behavioral signal analysis
+Multi-modal signal fusion for integrating HRV, motion variance, and pose features
+Age-norm anomaly detection models to identify deviations from developmental baselines
+Personalized baseline learning through adaptive model calibration
+Longitudinal risk curve generation to observe trend shifts over time
+Instead of fixed thresholds, the system continuously learns individual variability, reducing false positives caused by natural behavioral diversity.
+Ethical governance is embedded in the architecture. The system is non-diagnostic and provides risk probability bands rather than definitive classifications. All data is encrypted end-to-end, parental informed consent is mandatory, and explainable AI techniques ensure interpretability of outputs. A hypothetical pediatric advisory layer is incorporated into the deployment model to ensure responsible integration into existing care pathways.
+For feasibility within an MVP framework, the solution prioritizes scalable AI infrastructure over complex hardware ecosystems. By minimizing hardware dependency and focusing on computational modeling and longitudinal analytics, the system remains practical, cost-efficient, and deployable.
+In essence, this project shifts developmental screening from episodic, observation-based assessments to continuous, passive, AI-driven behavioral intelligence modeling. By identifying early deviations in physiological regulation and motor adaptation patterns, the system aims to support earlier intervention opportunities and improve developmental trajectories at scale."
+2/19/2026 23:42:59,AlphaBytes,4,Sanchi garg,A253167024031,sanchigarg510@gmail.com,Btech cse- 4 semester ,8264240039,Mannatpreet Kaur,A253167024034,Harshit,A253167024039,Adikansh,A253167024038,"NeuroVision  – Early Identification of Cognitive and Developmental Delays using AI-Based Eye Tracking and Movement Analysis
+
+Early Childhood Development (ECD) from ages 0–6 is the most critical period for brain growth, with nearly 90% of brain development occurring during these formative years. However, early identification of cognitive and developmental delays remains a significant challenge, particularly in rural and resource-constrained settings. Existing screening methods rely primarily on manual observation and caregiver questionnaires, which are subjective, inconsistent, and often fail to detect subtle early-stage developmental abnormalities. This delay in identification reduces the effectiveness of timely interventions, affecting the child’s long-term cognitive and social outcomes.
+
+NeuroVision proposes an innovative, AI-powered screening system that uses smartphone-based computer vision to objectively assess early cognitive and motor development. The system presents simple visual stimuli, such as moving objects and human faces, on a mobile device screen while the built-in camera records the child’s eye movements, attention span, and response patterns. Eye gaze behavior, focus duration, and attention shifts are critical indicators of neurological and cognitive development. In addition, the system analyzes the child’s basic motor movements, such as reaching or hand coordination, using pose estimation technology to evaluate motor skill development.
+
+The captured visual and motion data are processed using machine learning and computer vision algorithms to identify patterns associated with developmental delays. Based on the analysis, the system classifies children into risk categories such as low, moderate, or high risk and provides early alerts and recommendations for further evaluation. The solution is designed to be simple, non-invasive, and usable by Anganwadi workers and caregivers without requiring specialized medical expertise. Offline functionality ensures accessibility in remote areas with limited internet connectivity.
+
+The key innovation of NeuroVision lies in its objective, scalable, and low-cost approach using only a smartphone camera, eliminating dependence on expensive diagnostic tools. By combining AI-based eye tracking and movement analysis, the system enables more accurate and earlier identification of developmental risks compared to traditional screening methods.
+
+This solution can significantly strengthen early childhood development programs such as ICDS by empowering frontline workers with AI-based decision support. Early detection enables timely intervention, improving developmental outcomes and overall quality of life. NeuroVision AI offers a scalable and impactful approach to leveraging artificial intelligence for transforming early childhood screening and care."
+2/19/2026 23:50:57,Brainwave,4,Lagan Gupta,A253175125109,lagangupta1112@gmail.com,Btech CSE AI ML SEM 2,9646010651,Akagarta Arora,A253175125090,Jahnvi Mehta,A253175125095,Angelina Sharma,A253175125099,"Our project is based on the theme “AI for early identification of cognitive and developmental delays in early childhood”, with a special focus on detecting Autism Spectrum Disorder (ASD) at an early stage. Autism is a neurodevelopmental condition that affects the way a child communicates, interacts socially, and responds to their environment. Children with autism may show signs like delayed speech, reduced eye contact, difficulty in social bonding, repetitive movements, or unusual reactions to sound, touch, and surroundings. Since autism exists on a spectrum, every child may show different symptoms and severity levels, which makes it difficult for parents to identify the condition without proper screening.
+
+In India, early autism detection is still a major challenge. While global reports suggest that autism affects around 1 in 100 children, many children in India remain undiagnosed or are diagnosed very late. One of the main reasons is that India does not have a strong nationwide system for early developmental screening. In many rural areas, pediatric specialists and trained therapists are either limited or not available at all. Along with this, parents often visit doctors only during vaccinations or when the child becomes seriously ill. Regular developmental checkups are not common, which means early warning signs are often ignored or misunderstood. Lack of awareness, social stigma, and misinformation also delay parents from seeking professional help.
+
+To solve this issue, we propose developing an AI-based screening tool that can help parents identify early signs of autism from home. The goal is not to replace doctors, but to provide a quick and accessible first-level screening system. The tool will work in two steps. First, parents will answer a simple questionnaire about the child’s daily behavior, communication skills, and social responses. Second, the tool will ask parents to record a short video of the child performing certain guided tasks, such as responding to their name, playing with a toy, or reacting to expressions. Using AI-based video analysis, the system will observe patterns like eye contact, gestures, facial expressions, and interaction behavior.
+
+After analyzing both the questionnaire and the video, the tool will generate a risk percentage score showing how likely the child may be on the autism spectrum. If the risk score is high, the app will guide parents by suggesting nearby pediatricians and specialists, along with online consultation options. This feature can especially help rural families who struggle to access proper medical support.
+
+Early identification is extremely important because if autism goes unrecognized, children may face challenges like low confidence, loneliness, lack of acceptance, learning difficulties, and social exclusion. With early screening and timely therapy, children can receive the support they need at the right time. Through this project, we aim to make autism screening easier, faster, and more accessible for families across India."
+2/20/2026 1:30:30,harsh and krish,2,harsh,A25304825007,harshbhardwaj212006@gmail.com,bca 2nd sem,9056840874,harsh,A25304825007,krishnansh ,A25304825030,,,"AI for Early Identification of Cognitive & Developmental Delays in Early Childhood
+Target Problem: Problem A (Early Identification) & Problem B (Personalized Caregiver Engagement)"
