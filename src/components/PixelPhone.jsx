@@ -35,10 +35,10 @@ const PixelPhone = ({ display }) => {
                     inset: 0,
                     width: '100%',
                     height: '100%',
-                    objectFit: 'cover',
+                    objectFit: 'contain',
                     zIndex: 0,
                     filter: 'brightness(0.3)',
-                    transform: 'scale(1.1)'
+                    transform: 'scale(0.7)'
                 }}
             />
 
